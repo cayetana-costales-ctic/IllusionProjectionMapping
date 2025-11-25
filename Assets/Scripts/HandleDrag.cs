@@ -28,7 +28,7 @@ public class HandleDrag : MonoBehaviour
 
     private void Update()
     {
-        if (!dragging || editor == null || cam == null) return;
+        if (!dragging || !editor || !cam) return;
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 

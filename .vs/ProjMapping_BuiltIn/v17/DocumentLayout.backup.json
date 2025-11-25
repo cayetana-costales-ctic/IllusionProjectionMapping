@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|c:\\users\\cayetana.costales\\documents\\repos\\proyectionmapping\\projmapping_builtin\\assets\\shaders\\projectionrob.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\shaders\\projectionrob.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|c:\\users\\cayetana.costales\\documents\\repos\\proyectionmapping\\projmapping_builtin\\assets\\shaders\\uv fix.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\shaders\\uv fix.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\handledrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\handledrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\planevertexeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planevertexeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\instantiator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\instantiator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\planefromvertices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planefromvertices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\runtimegizmo\\transformgizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\runtimegizmo\\transformgizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\savedata\\saveableprojection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\saveableprojection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\savedata\\projectionsavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\projectionsavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\camera\\savecameraview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\savecameraview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\savedata\\transformsavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\transformsavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\runtimegizmo\\custom\\transformgizmocustomgizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\runtimegizmo\\custom\\transformgizmocustomgizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\savedata\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\assets\\scripts\\savedata\\isaveable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\isaveable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectionROB.shader",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Shaders\\ProjectionROB.shader",
+              "RelativeDocumentMoniker": "Assets\\Shaders\\ProjectionROB.shader",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Shaders\\ProjectionROB.shader",
+              "RelativeToolTip": "Assets\\Shaders\\ProjectionROB.shader",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-11-06T09:32:39.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UV Fix.shader",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Shaders\\UV Fix.shader",
+              "RelativeDocumentMoniker": "Assets\\Shaders\\UV Fix.shader",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Shaders\\UV Fix.shader",
+              "RelativeToolTip": "Assets\\Shaders\\UV Fix.shader",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-11-06T09:03:25.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HandleDrag.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\HandleDrag.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HandleDrag.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\HandleDrag.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HandleDrag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T07:47:06.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlaneVertexEditor.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\PlaneVertexEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneVertexEditor.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\PlaneVertexEditor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlaneVertexEditor.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswB4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T07:45:24.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Instantiator.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\Instantiator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Instantiator.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\Instantiator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Instantiator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T07:30:01.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransformGizmo.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\RuntimeGizmo\\TransformGizmo.cs",
+              "RelativeDocumentMoniker": "Assets\\RuntimeGizmo\\TransformGizmo.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\RuntimeGizmo\\TransformGizmo.cs",
+              "RelativeToolTip": "Assets\\RuntimeGizmo\\TransformGizmo.cs",
+              "ViewState": "AgIAAJACAAAAAAAAAAAowJ8CAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T09:45:50.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TransformSaveData.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\TransformSaveData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData\\TransformSaveData.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\TransformSaveData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveData\\TransformSaveData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:14:44.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TransformGizmoCustomGizmo.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\RuntimeGizmo\\Custom\\TransformGizmoCustomGizmo.cs",
+              "RelativeDocumentMoniker": "Assets\\RuntimeGizmo\\Custom\\TransformGizmoCustomGizmo.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\RuntimeGizmo\\Custom\\TransformGizmoCustomGizmo.cs",
+              "RelativeToolTip": "Assets\\RuntimeGizmo\\Custom\\TransformGizmoCustomGizmo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwC0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T07:16:34.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SaveCameraView.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\Camera\\SaveCameraView.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\SaveCameraView.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\Camera\\SaveCameraView.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\SaveCameraView.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T07:50:16.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ISaveable.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\ISaveable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData\\ISaveable.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\ISaveable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveData\\ISaveable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:20:03.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SaveManager.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\SaveManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData\\SaveManager.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\SaveManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveData\\SaveManager.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAuwDsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:21:40.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SaveableProjection.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\SaveableProjection.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData\\SaveableProjection.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\SaveableProjection.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveData\\SaveableProjection.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwDEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T09:23:41.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlaneFromVertices.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\PlaneFromVertices.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneFromVertices.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\PlaneFromVertices.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlaneFromVertices.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwBoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T12:37:31.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjectionSaveData.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\ProjectionSaveData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData\\ProjectionSaveData.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\repos\\proyectionmapping\\ProjMapping_BuiltIn\\Assets\\Scripts\\SaveData\\ProjectionSaveData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SaveData\\ProjectionSaveData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:15:18.845Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

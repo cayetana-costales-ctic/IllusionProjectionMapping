@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.PhysicalHandsExamples.Editor", "Ultraleap.PhysicalHandsExamples.Editor.csproj", "{F3A3B62A-756C-0AFA-D841-077B4B6A73ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.Tracking.PhysicalHandsExamples", "Ultraleap.Tracking.PhysicalHandsExamples.csproj", "{0898B610-CA19-ABE1-EACF-A7BE93B8E568}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3D50EE-7D61-CCA8-93B2-CF542E8BCCA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A3B62A-756C-0AFA-D841-077B4B6A73ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A3B62A-756C-0AFA-D841-077B4B6A73ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A3B62A-756C-0AFA-D841-077B4B6A73ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A3B62A-756C-0AFA-D841-077B4B6A73ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0898B610-CA19-ABE1-EACF-A7BE93B8E568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0898B610-CA19-ABE1-EACF-A7BE93B8E568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0898B610-CA19-ABE1-EACF-A7BE93B8E568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0898B610-CA19-ABE1-EACF-A7BE93B8E568}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
