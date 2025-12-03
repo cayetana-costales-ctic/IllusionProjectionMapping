@@ -29,15 +29,17 @@ public class SelectedObjectUI : MonoBehaviour
 
             currentQuadBilinear = obj.GetComponent<QuadBilinear>();
 
-            currentQuadBilinear.textureTiling.x = sliderTilingX.value;
-            textTilingX.text = "Tiling X: " + currentQuadBilinear.textureTiling.x.ToString("F2");
-            currentQuadBilinear.textureTiling.y = sliderTilingY.value;
-            textTilingY.text = "Tiling Y: " + currentQuadBilinear.textureTiling.y.ToString("F2");
+            sliderTilingX.value = currentQuadBilinear.textureTiling.x;
+            sliderTilingY.value = currentQuadBilinear.textureTiling.y;
 
-            currentQuadBilinear.textureTiling.x = sliderOffsetX.value;
-            textOffsetX.text = "Offset X: " + currentQuadBilinear.textureOffset.x.ToString("F2");
-            currentQuadBilinear.textureTiling.y = sliderOffsetY.value;
-            textOffsetY.text = "Offset Y: " + currentQuadBilinear.textureOffset.y.ToString("F2");
+            sliderOffsetX.value = currentQuadBilinear.textureOffset.x;
+            sliderOffsetY.value = currentQuadBilinear.textureOffset.y;
+
+            textTilingX.text = "Tiling X: " + sliderTilingX.value.ToString("F2");
+            textTilingY.text = "Tiling Y: " + sliderTilingY.value.ToString("F2");
+
+            textOffsetX.text = "Offset X: " + sliderOffsetX.value.ToString("F2");
+            textOffsetY.text = "Offset Y: " + sliderOffsetY.value.ToString("F2");
         }
     }
 
@@ -73,7 +75,7 @@ public class SelectedObjectUI : MonoBehaviour
         if (currentQuadBilinear != null)
         {
             currentQuadBilinear.textureOffset.y = value;
-            textOffsetX.text = "Offset Y: " + value.ToString("F2");
+            textOffsetY.text = "Offset Y: " + value.ToString("F2");
         }
     }
 

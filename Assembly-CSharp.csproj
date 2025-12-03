@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\SaveData\TransformSaveData.cs" />
     <Compile Include="Assets\Scripts\Instantiator.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Anchors\scripts\SimpleMatchAnchorScaleAndState.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
     <Compile Include="Assets\Scripts\Camera\FreeCameraController.cs" />
     <Compile Include="Assets\RuntimeGizmo\Helpers\ExtTransformType.cs" />
     <Compile Include="Assets\Scripts\SaveData\ProjectionSaveData.cs" />
@@ -81,11 +82,14 @@
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Turntable and Pullcord\Scripts\PullCord\Exploding Items\ExplodingItemController.cs" />
     <Compile Include="Assets\RuntimeGizmo\Helpers\Geometry.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Pinch to Paint\Scripts\RectToroid.cs" />
+    <Compile Include="Assets\Scripts\TextureImporter\RuntimeImporter.cs" />
     <Compile Include="Assets\Scripts\VertexEditController.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowser.cs" />
     <Compile Include="Assets\Scripts\Helpers\KeyPressEvent.cs" />
     <Compile Include="Assets\Scripts\Camera\SaveCameraView.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Turntable and Pullcord\Scripts\PullCord\LineBetweenTransforms.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Turntable and Pullcord\Scripts\Turntable\TurntableVisuals.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileText.cs" />
     <Compile Include="Assets\Scripts\PlaneVertexEditor.cs" />
     <Compile Include="Assets\RuntimeGizmo\Objects\IntersectPoints.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Turntable and Pullcord\Scripts\PullCord\PullCord.cs" />
@@ -95,13 +99,16 @@
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\Tabletop Examples\Example Assets\Scripts\SampleDependencies.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Misc and Shared\Scripts\SimpleScaleUtil.cs" />
     <Compile Include="Assets\Scripts\SaveData\ISaveable.cs" />
+    <Compile Include="Assets\Scripts\TextureImporter\MaterialMediaController.cs" />
     <Compile Include="Assets\RuntimeGizmo\UndoRedo\ICommand.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Misc and Shared\Scripts\SimpleRendererUtil.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserEditor.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\All Examples\ImportAllExamplesUtil.cs" />
     <Compile Include="Assets\RuntimeGizmo\UndoRedo\CommandGroup.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Manipulating Hand Data\Scripts\ProjectionPostProcessProvider.cs" />
     <Compile Include="Assets\Scripts\Helpers\LookAtCamera.cs" />
     <Compile Include="Assets\RuntimeGizmo\UndoRedo\UndoRedo.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileTextMultiple.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Pinch to Paint\Scripts\StrokeProcessor.cs" />
     <Compile Include="Assets\RuntimeGizmo\TransformGizmo.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Misc and Shared\Scripts\KeyboardManager.cs" />
@@ -120,18 +127,25 @@
     <Compile Include="Assets\Shaders\QuadQuadrilateralUpdater.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Manipulating Hand Data\Scripts\InertiaPostProcessProvider.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\Shared Example Assets REQUIRED\Scripts\CycleHandPairs.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleSaveFileImage.cs" />
     <Compile Include="Assets\RuntimeGizmo\Helpers\ExtVector3.cs" />
     <Compile Include="Assets\RuntimeGizmo\Helpers\ExtTransform.cs" />
     <Compile Include="Assets\RuntimeGizmo\Objects\Square.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Anchors\scripts\WorkstationBehaviourExample.cs" />
     <Compile Include="Assets\Scripts\PlaneFromVertices.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Pose Detection\Scripts\PoseRecorderExampleManager.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\IStandaloneFileBrowser.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
     <Compile Include="Assets\RuntimeGizmo\UndoRedo\UndoRedoManager.cs" />
     <Compile Include="Assets\RuntimeGizmo\Custom\TransformGizmoCustomGizmo.cs" />
     <Compile Include="Assets\RuntimeGizmo\Objects\Commands\SelectCommand.cs" />
     <Compile Include="Assets\RuntimeGizmo\Objects\Commands\TransformCommand.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileText.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\BasicSample.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\URP Examples\Example Assets\Scripts\URPSampleDependencyImporter.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Pinch to Paint\Scripts\PinchStrokeProcessor.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\Sample\CanvasSampleOpenFileImage.cs" />
+    <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Turntable and Pullcord\Scripts\PullCord\PullCordHandle.cs" />
     <Compile Include="Assets\Scripts\HandleDrag.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Pose Detection\Scripts\PoseDetectorUIText.cs" />
@@ -150,6 +164,7 @@
     <None Include="Assets\Shaders\NewSurfaceShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\StandaloneFileBrowser\Plugins\Ookii.Dialogs.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -163,6 +178,7 @@
     <None Include="Assets\Shaders\UV Fix.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\StandaloneFileBrowser\Plugins\System.Windows.Forms.dll" />
     <None Include="Assets\Shaders\QuadBilinear.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Physical Hands\Materials\SimpleOutline.shader" />
@@ -654,8 +670,16 @@
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>Assets\StandaloneFileBrowser\Plugins\Ookii.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@6279e2b7c485\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>Assets\StandaloneFileBrowser\Plugins\System.Windows.Forms.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">

@@ -694,11 +694,8 @@ namespace RuntimeGizmos
                         ClearAndAddTarget(target);
                     }
 
-                    if (!hasTarget)
-                    {
-                        hasTarget = true;
-                        OnTargetSelected?.Invoke();
-                    }
+                    hasTarget = true;
+                    OnTargetSelected?.Invoke();
                 }
                 else
                 {
