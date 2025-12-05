@@ -10,8 +10,6 @@ public class MaterialMediaController : MonoBehaviour
     private Renderer currentRenderer;
     private VideoPlayer currentVideo;
 
-    public RawImage texturePreview;
-
     private void Awake()
     {
         gizmo = GetComponent<TransformGizmo>();
@@ -26,26 +24,11 @@ public class MaterialMediaController : MonoBehaviour
             currentRenderer = null;
             currentVideo = null;
 
-            if (texturePreview)
-                texturePreview.texture = null;
-
             return;
         }
 
         currentRenderer = target.GetComponent<Renderer>();
         currentVideo = target.GetComponentInChildren<VideoPlayer>();
-
-        UpdatePreview();
-    }
-
-    private void UpdatePreview()
-    {
-        if (!texturePreview) return;
-
-        if (currentRenderer && currentRenderer.sharedMaterial && currentRenderer.sharedMaterial.mainTexture)
-            texturePreview.texture = currentRenderer.sharedMaterial.mainTexture;
-        else
-            texturePreview.texture = null;
     }
 
     public void OnImportTextureButton()

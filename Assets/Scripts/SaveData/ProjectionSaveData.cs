@@ -8,10 +8,13 @@ public class ProjectionSaveData : TransformSaveData
     public string objectName;
     public string meshName;
     public string materialName;
-    public string textureName;
-    public string videoClipName;
 
-    public ProjectionSaveData() : base() { }
+    public string texturePath;
+    public string videoPath;
+
+    public ProjectionSaveData() : base()
+    {
+    }
 
     public ProjectionSaveData(GameObject obj) : base(obj.transform)
     {
@@ -23,7 +26,17 @@ public class ProjectionSaveData : TransformSaveData
 
         meshName = filter?.sharedMesh?.name ?? "";
         materialName = renderer?.sharedMaterial?.name ?? "";
-        textureName = renderer?.sharedMaterial?.mainTexture?.name ?? "";
-        videoClipName = video?.clip?.name ?? "";
+
+        texturePath = renderer?.sharedMaterial?.mainTexture != null
+            ? renderer.sharedMaterial.mainTexture.name
+            : "";
+
+        if (renderer && renderer.sharedMaterial && renderer.sharedMaterial.mainTexture)
+        {
+            if (renderer.sharedMaterial.mainTexture is Texture2D tex)
+                texturePath = tex.name;
+        }
+
+        videoPath = video?.url ?? "";
     }
 }

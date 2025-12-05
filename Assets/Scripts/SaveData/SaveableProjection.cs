@@ -1,4 +1,4 @@
-using System;
+using System.IO;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -6,10 +6,10 @@ public class SaveableProjection : MonoBehaviour, ISaveable
 {
     public string uniqueID;
 
-    void Awake()
+    private void Awake()
     {
         if (string.IsNullOrEmpty(uniqueID))
-            uniqueID = Guid.NewGuid().ToString();
+            uniqueID = System.Guid.NewGuid().ToString();
     }
 
     public string GetUniqueID() => uniqueID;
@@ -21,55 +21,24 @@ public class SaveableProjection : MonoBehaviour, ISaveable
 
     public void RestoreState(object state)
     {
-        var data = state as ProjectionSaveData;
+        var data = (ProjectionSaveData)state;
         if (data == null) return;
 
         data.ApplyTo(transform);
 
-        var filter = GetComponent<MeshFilter>();
-        if (filter != null)
-            filter.sharedMesh = FindMeshByName(data.meshName);
-
         var renderer = GetComponent<MeshRenderer>();
-        if (renderer != null)
+        var video = GetComponentInChildren<VideoPlayer>();
+
+        if (renderer && !string.IsNullOrEmpty(data.texturePath) && File.Exists(data.texturePath))
         {
-            renderer.sharedMaterial = FindMaterialByName(data.materialName);
-            if (renderer.sharedMaterial != null && !string.IsNullOrEmpty(data.textureName))
-            {
-                renderer.sharedMaterial.mainTexture = FindTextureByName(data.textureName);
-            }
+            Texture2D tex = RuntimeImporter.LoadImage(data.texturePath);
+            if (tex != null) renderer.material.mainTexture = tex;
         }
 
-        var video = GetComponentInChildren<VideoPlayer>();
-        if (video != null)
-            video.clip = FindVideoClipByName(data.videoClipName);
-    }
-
-    Mesh FindMeshByName(string name)
-    {
-        foreach (var m in Resources.FindObjectsOfTypeAll<Mesh>())
-            if (m.name == name) return m;
-        return null;
-    }
-
-    Material FindMaterialByName(string name)
-    {
-        foreach (var m in Resources.FindObjectsOfTypeAll<Material>())
-            if (m.name == name) return m;
-        return null;
-    }
-
-    Texture FindTextureByName(string name)
-    {
-        foreach (var t in Resources.FindObjectsOfTypeAll<Texture>())
-            if (t.name == name) return t;
-        return null;
-    }
-
-    VideoClip FindVideoClipByName(string name)
-    {
-        foreach (var v in Resources.FindObjectsOfTypeAll<VideoClip>())
-            if (v.name == name) return v;
-        return null;
+        if (video && !string.IsNullOrEmpty(data.videoPath) && File.Exists(data.videoPath))
+        {
+            video.source = VideoSource.Url;
+            video.url = data.videoPath;
+        }
     }
 }
