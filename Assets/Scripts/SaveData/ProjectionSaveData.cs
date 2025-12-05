@@ -36,14 +36,12 @@ public class ProjectionSaveData : TransformSaveData
         meshName = filter?.sharedMesh?.name ?? "";
         materialName = renderer?.sharedMaterial?.name ?? "";
 
-        texturePath = renderer?.sharedMaterial?.mainTexture != null
-            ? renderer.sharedMaterial.mainTexture.name
-            : "";
+        texturePath = obj.GetComponent<SaveableProjection>()?.LastTexturePath ?? "";
 
         if (renderer && renderer.sharedMaterial && renderer.sharedMaterial.mainTexture)
         {
             if (renderer.sharedMaterial.mainTexture is Texture2D tex)
-                texturePath = tex.name;
+                texturePath = obj.GetComponent<SaveableProjection>()?.LastTexturePath ?? "";
         }
 
         videoPath = video?.url ?? "";

@@ -3,14 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-/// <summary>
-/// SaveManager mejorado:
-/// - Auto-registra objetos "saveable" (SaveableProjection) para MeshRenderer / VideoPlayer.
-/// - Guarda sólo objetos con tag "SaveableRuntime".
-/// - LoadAll reinicia la escena a partir del JSON (destruye objetos previos con esa tag).
-/// - Fuerza activación de componentes al instanciar.
-/// - Protecciones contra referencias nulas/Instantiate con prefab nulo.
-/// </summary>
 public class SaveManager : MonoBehaviour
 {
     [Serializable]
@@ -29,19 +21,15 @@ public class SaveManager : MonoBehaviour
 
     public string saveFileName = "scene_save.json";
 
-    [Tooltip("Prefab contenedor que se instancia al hacer Load. Debe tener SaveableProjection en su root.")]
     public GameObject projectionPrefab;
 
-    // Tag usado para marcar objetos que deben guardarse / recrearse
     public string saveableTag = "SaveableRuntime";
 
     private Dictionary<string, SaveEntry> cachedEntries = new Dictionary<string, SaveEntry>();
 
-    // ---------------- SAVE ----------------
     [ContextMenu("Save All")]
     public void SaveAll()
     {
-        // Asegurar que objetos nuevos se marquen como Saveable (opción B)
         EnsureSaveables();
 
         cachedEntries.Clear();
@@ -53,7 +41,6 @@ public class SaveManager : MonoBehaviour
         {
             if (behaviour is ISaveable saveable)
             {
-                // Sólo guardamos los que tengan la tag correcta (evita guardar assets del proyecto o prefabs en escena)
                 var mb = (MonoBehaviour)saveable;
                 if (!mb.gameObject.CompareTag(saveableTag))
                     continue;
@@ -98,7 +85,6 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    // ---------------- LOAD ----------------
     [ContextMenu("Load All (Reset Scene)")]
     public void LoadAll()
     {
@@ -109,7 +95,6 @@ public class SaveManager : MonoBehaviour
             return;
         }
 
-        // Leer JSON
         string json = File.ReadAllText(path);
         SaveFile file = null;
         try
@@ -122,8 +107,6 @@ public class SaveManager : MonoBehaviour
             return;
         }
 
-        // 1) Destruir todos los objetos actuales marcados como saveable
-        // Usamos ToArray para evitar problemas al modificar la colección durante la iteración
         var allGameObjects = FindObjectsOfType<GameObject>(true);
         var toDestroy = new List<GameObject>();
         foreach (var go in allGameObjects)
@@ -142,17 +125,14 @@ public class SaveManager : MonoBehaviour
 #endif
         }
 
-        // 2) Si no hay prefab, abortar con mensaje (protección contra Instantiate con null)
         if (projectionPrefab == null)
         {
             Debug.LogError("LoadAll: projectionPrefab is not assigned. Cannot instantiate saved objects.");
             return;
         }
 
-        // 3) Recrear todos los objetos desde el JSON
         foreach (var entry in file.entries)
         {
-            // Instanciar prefab contenedor
             GameObject obj = null;
             try
             {
@@ -170,31 +150,25 @@ public class SaveManager : MonoBehaviour
                 continue;
             }
 
-            // Asegurar activo y tag
             obj.SetActive(true);
             obj.tag = saveableTag;
             obj.name = entry.id;
 
-            // Garantizar que exista SaveableProjection
             var saveable = obj.GetComponent<ISaveable>();
             if (saveable == null)
             {
-                // Añadir componente SaveableProjection si falta
                 var sp = obj.AddComponent<SaveableProjection>();
                 saveable = sp;
             }
 
-            // Forzar uniqueID si es SaveableProjection
             if (saveable is SaveableProjection sp2)
             {
                 sp2.uniqueID = entry.id;
             }
 
-            // Asegurar que todos los componentes estén activados antes de restaurar
             ForceEnableAllComponents(obj);
 
-            // Deserializar estado y restaurar (con try/catch para no romper la carga completa)
-            System.Type type = System.Type.GetType(entry.type);
+            Type type = Type.GetType(entry.type);
             object state = null;
             try
             {
@@ -206,28 +180,18 @@ public class SaveManager : MonoBehaviour
                 Debug.LogError($"LoadAll: error restoring entry {entry.id}: {ex}");
             }
 
-            // Después de restaurar, forzamos activación otra vez (al restaurar podrían haberse desactivado)
             ForceEnableAllComponents(obj);
         }
 
         Debug.Log("Load Complete");
     }
 
-    // ---------------- HELPERS ----------------
-
-    /// <summary>
-    /// Añade SaveableProjection automáticamente a todos los GameObjects que tengan MeshRenderer o VideoPlayer
-    /// y que no tengan ya SaveableProjection. Marca los añadidos con la tag saveableTag.
-    /// </summary>
     private void EnsureSaveables()
     {
-        // Asegurarse de que la tag existe (solo informativo; la tag debe existir en el editor)
-        // Añadimos only objects in scene (active or inactive)
         var allGOs = FindObjectsOfType<GameObject>(true);
 
         foreach (var go in allGOs)
         {
-            // Si ya tiene SaveableProjection, aseguramos que tenga la tag correcta
             if (go.GetComponent<SaveableProjection>() != null)
             {
                 if (!go.CompareTag(saveableTag))
@@ -235,13 +199,11 @@ public class SaveManager : MonoBehaviour
                 continue;
             }
 
-            // Si tiene MeshRenderer o VideoPlayer, lo transformamos en "saveable"
             bool hasMesh = go.GetComponent<MeshRenderer>() != null;
             bool hasVideo = go.GetComponentInChildren<UnityEngine.Video.VideoPlayer>() != null;
 
             if (hasMesh || hasVideo)
             {
-                // Evitar convertir objetos que son assets/prefabs que no estén en escena
                 if (go.scene.IsValid())
                 {
                     var sp = go.AddComponent<SaveableProjection>();
@@ -252,9 +214,6 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Fuerza que todos los componentes relevantes en el objeto estén activados.
-    /// </summary>
     private void ForceEnableAllComponents(GameObject root)
     {
         if (root == null) return;

@@ -5,6 +5,7 @@ using UnityEngine.Video;
 public class SaveableProjection : MonoBehaviour, ISaveable
 {
     public string uniqueID;
+    public string LastTexturePath = "";
 
     private void Awake()
     {
@@ -30,10 +31,17 @@ public class SaveableProjection : MonoBehaviour, ISaveable
         var video = GetComponentInChildren<VideoPlayer>();
         var quad = GetComponent<QuadBilinear>();
 
-        if (renderer && !string.IsNullOrEmpty(data.texturePath) && File.Exists(data.texturePath))
+        if (!string.IsNullOrEmpty(data.texturePath) && File.Exists(data.texturePath))
         {
-            Texture2D tex = RuntimeImporter.LoadImage(data.texturePath);
-            if (tex != null) renderer.material.mainTexture = tex;
+            var tex = RuntimeImporter.LoadImage(data.texturePath);
+            if (tex)
+            {
+                renderer.material.mainTexture = tex;
+
+                var sp = GetComponent<SaveableProjection>();
+                if (sp != null)
+                    sp.LastTexturePath = data.texturePath;
+            }
         }
 
         if (renderer)

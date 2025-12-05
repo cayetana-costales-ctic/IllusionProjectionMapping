@@ -1,4 +1,4 @@
-using RuntimeGizmos;
+﻿using RuntimeGizmos;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -44,7 +44,7 @@ public class MaterialMediaController : MonoBehaviour
             return;
 
         RefreshTarget();
-        ApplyTexture(tex);
+        ApplyTexture(tex, path);
 
         if (currentVideo)
         {
@@ -53,11 +53,15 @@ public class MaterialMediaController : MonoBehaviour
         }
     }
 
-    public void ApplyTexture(Texture2D tex)
+    public void ApplyTexture(Texture2D tex, string path)
     {
         if (!currentRenderer) return;
 
         currentRenderer.material.mainTexture = tex;
+
+        var sp = currentRenderer.GetComponent<SaveableProjection>();
+        if (sp != null)
+            sp.LastTexturePath = path;
     }
 
     public void ImportAndApplyVideo()
