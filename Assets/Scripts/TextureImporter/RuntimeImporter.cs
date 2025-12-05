@@ -11,8 +11,8 @@ public static class RuntimeImporter
     public static string ImportImage()
     {
         var extensions = new[] {
-            new ExtensionFilter("Image Files", "png", "jpg", "jpeg")
-        };
+        new ExtensionFilter("Image Files", "png", "jpg", "jpeg")
+    };
 
         string[] paths = StandaloneFileBrowser.OpenFilePanel("Select Image", "", extensions, false);
 
@@ -24,8 +24,11 @@ public static class RuntimeImporter
         if (!Directory.Exists(imageFolder))
             Directory.CreateDirectory(imageFolder);
 
-        string fileName = Path.GetFileName(sourcePath);
-        string targetPath = Path.Combine(imageFolder, fileName);
+        string fileName = Path.GetFileNameWithoutExtension(sourcePath);
+        string extension = Path.GetExtension(sourcePath);
+        string uniqueName = fileName + "_" + System.Guid.NewGuid().ToString("N") + extension;
+
+        string targetPath = Path.Combine(imageFolder, uniqueName);
 
         File.Copy(sourcePath, targetPath, true);
 
@@ -60,8 +63,11 @@ public static class RuntimeImporter
         if (!Directory.Exists(videoFolder))
             Directory.CreateDirectory(videoFolder);
 
-        string fileName = Path.GetFileName(sourcePath);
-        string targetPath = Path.Combine(videoFolder, fileName);
+        string fileName = Path.GetFileNameWithoutExtension(sourcePath);
+        string extension = Path.GetExtension(sourcePath);
+        string uniqueName = fileName + "_" + System.Guid.NewGuid().ToString("N") + extension;
+
+        string targetPath = Path.Combine(videoFolder, uniqueName);
 
         File.Copy(sourcePath, targetPath, true);
 

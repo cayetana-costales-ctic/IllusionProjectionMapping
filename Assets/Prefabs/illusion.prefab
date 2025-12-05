@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7916218573470856241}
   - component: {fileID: 8056887119690245909}
   m_Layer: 0
-  m_Name: plane
+  m_Name: illusion
   m_TagString: SaveableRuntime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

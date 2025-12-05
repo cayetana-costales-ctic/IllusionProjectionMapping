@@ -28,7 +28,7 @@ public class MaterialMediaController : MonoBehaviour
         }
 
         currentRenderer = target.GetComponent<Renderer>();
-        currentVideo = target.GetComponentInChildren<VideoPlayer>();
+        currentVideo = target.GetComponentInChildren<VideoPlayer>(true);
     }
 
     public void OnImportTextureButton()
@@ -45,6 +45,12 @@ public class MaterialMediaController : MonoBehaviour
 
         RefreshTarget();
         ApplyTexture(tex);
+
+        if (currentVideo)
+        {
+            currentVideo.Stop();
+            currentVideo.gameObject.SetActive(false);
+        }
     }
 
     public void ApplyTexture(Texture2D tex)
@@ -63,6 +69,7 @@ public class MaterialMediaController : MonoBehaviour
 
         if (currentVideo)
         {
+            currentVideo.gameObject.SetActive(true);
             currentVideo.source = VideoSource.Url;
             currentVideo.url = path;
             currentVideo.Play();

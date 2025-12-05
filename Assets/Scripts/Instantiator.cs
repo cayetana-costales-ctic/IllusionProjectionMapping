@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Instantiator : MonoBehaviour
 {
+    public GameObject illusionPrefab;
+
     // Optional Parent
     public Transform parentTransform;
 
@@ -17,7 +19,6 @@ public class Instantiator : MonoBehaviour
 
         return obj;
     }
-
 
     public GameObject InstantiatePrimitive(PrimitiveType type)
     {
@@ -42,7 +43,14 @@ public class Instantiator : MonoBehaviour
 
     public void SpawnPlane()
     {
-        InstantiatePrimitive( PrimitiveType.Plane, Vector3.zero, Quaternion.identity, new Vector3(0.1f, 0.1f, 0.1f));
+        InstantiatePrimitive(PrimitiveType.Plane, Vector3.zero, Quaternion.identity, new Vector3(0.1f, 0.1f, 0.1f));
     }
 
+    public void SpawnIllusion()
+    {
+        if (!illusionPrefab)
+            return;
+
+        Instantiate(illusionPrefab, Vector3.zero, Quaternion.identity, parentTransform);
+    }
 }
