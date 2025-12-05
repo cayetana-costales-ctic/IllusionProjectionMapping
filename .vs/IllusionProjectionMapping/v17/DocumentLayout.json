@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|c:\\users\\cayetana.costales\\documents\\github\\illusionprojectionmapping\\assets\\scripts\\savedata\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|c:\\users\\cayetana.costales\\documents\\github\\illusionprojectionmapping\\assets\\scripts\\planevertexeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\planevertexeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|c:\\users\\cayetana.costales\\documents\\github\\illusionprojectionmapping\\assets\\scripts\\savedata\\saveableprojection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\assets\\scripts\\savedata\\saveableprojection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\saveableprojection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|c:\\users\\cayetana.costales\\documents\\github\\illusionprojectionmapping\\assets\\scripts\\savedata\\projectionsavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\assets\\scripts\\savedata\\projectionsavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\projectionsavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\assets\\scripts\\textureimporter\\runtimeimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\textureimporter\\runtimeimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|c:\\users\\cayetana.costales\\documents\\github\\illusionprojectionmapping\\assets\\scripts\\savedata\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA3A142-2DD7-B584-F2A9-04DDB4B06CF6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\savedata\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlaneVertexEditor.cs",
+              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\Assets\\Scripts\\PlaneVertexEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlaneVertexEditor.cs",
+              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\Assets\\Scripts\\PlaneVertexEditor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlaneVertexEditor.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T11:30:23.364Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -36,7 +49,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData\\ProjectionSaveData.cs",
               "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\Assets\\Scripts\\SaveData\\ProjectionSaveData.cs",
               "RelativeToolTip": "Assets\\Scripts\\SaveData\\ProjectionSaveData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T14:59:17.098Z",
               "EditorCaption": ""
@@ -49,35 +62,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData\\SaveableProjection.cs",
               "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\Assets\\Scripts\\SaveData\\SaveableProjection.cs",
               "RelativeToolTip": "Assets\\Scripts\\SaveData\\SaveableProjection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwEMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T14:58:46.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "SaveManager.cs",
               "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\Assets\\Scripts\\SaveData\\SaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SaveData\\SaveManager.cs",
               "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\Assets\\Scripts\\SaveData\\SaveManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\SaveData\\SaveManager.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAowJEAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAPIAAAAAAAAAAAAAwBIBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T14:44:15.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RuntimeImporter.cs",
-              "DocumentMoniker": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\Assets\\Scripts\\TextureImporter\\RuntimeImporter.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\TextureImporter\\RuntimeImporter.cs",
-              "ToolTip": "C:\\Users\\cayetana.costales\\Documents\\GitHub\\IllusionProjectionMapping\\Assets\\Scripts\\TextureImporter\\RuntimeImporter.cs",
-              "RelativeToolTip": "Assets\\Scripts\\TextureImporter\\RuntimeImporter.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwDkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T12:04:51.103Z",
               "EditorCaption": ""
             }
           ]

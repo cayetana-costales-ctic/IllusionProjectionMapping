@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -28,6 +28,7 @@ public class SaveableProjection : MonoBehaviour, ISaveable
 
         var renderer = GetComponent<MeshRenderer>();
         var video = GetComponentInChildren<VideoPlayer>();
+        var quad = GetComponent<QuadBilinear>();
 
         if (renderer && !string.IsNullOrEmpty(data.texturePath) && File.Exists(data.texturePath))
         {
@@ -35,10 +36,34 @@ public class SaveableProjection : MonoBehaviour, ISaveable
             if (tex != null) renderer.material.mainTexture = tex;
         }
 
+        if (renderer)
+        {
+            renderer.material.mainTextureScale = data.textureTiling;
+            renderer.material.mainTextureOffset = data.textureOffset;
+        }
+
+        if (quad != null)
+        {
+            quad.textureTiling = data.quadTextureTiling;
+            quad.textureOffset = data.quadTextureOffset;
+
+            if (renderer)
+            {
+                renderer.material.mainTextureScale = quad.textureTiling;
+                renderer.material.mainTextureOffset = quad.textureOffset;
+            }
+        }
+
         if (video && !string.IsNullOrEmpty(data.videoPath) && File.Exists(data.videoPath))
         {
             video.source = VideoSource.Url;
             video.url = data.videoPath;
+        }
+
+        var editor = GetComponent<PlaneVertexEditor>();
+        if (editor != null && data.editedVertices != null && data.editedVertices.Length > 0)
+        {
+            editor.RestoreVertices(data.editedVertices);
         }
     }
 }

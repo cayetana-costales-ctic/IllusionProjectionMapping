@@ -22,6 +22,32 @@ public class PlaneVertexEditor : MonoBehaviour
         AssignHandlesToQuad();
     }
 
+    public Vector3[] GetCurrentVertices()
+    {
+        return vertices != null ? (Vector3[])vertices.Clone() : null;
+    }
+
+    public void RestoreVertices(Vector3[] newVerts)
+    {
+        if (mesh == null)
+            mesh = GetComponent<MeshFilter>().mesh;
+
+        if (newVerts == null || newVerts.Length != mesh.vertexCount)
+        {
+            Debug.LogWarning("RestoreVertices: vertex array size mismatch!");
+            return;
+        }
+
+        vertices = (Vector3[])newVerts.Clone();
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
+
+        UpdateHandlePositions();
+
+        AssignHandlesToQuad();
+    }
+
     private void CreateHandles()
     {
         const float handleScale = 0.1f;
