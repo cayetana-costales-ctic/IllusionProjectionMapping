@@ -1,0 +1,69 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="CursorManager">
+			<method name="HideCursor"/>
+			<method name="ShowCursor"/>
+		</type>
+		<type fullname="Instantiator">
+			<method name="SpawnCube"/>
+			<method name="SpawnIllusion"/>
+			<method name="SpawnPlane"/>
+			<method name="SpawnSphere"/>
+		</type>
+		<type fullname="MaterialMediaController">
+			<method name="ImportAndApplyVideo"/>
+			<method name="OnImportTextureButton"/>
+		</type>
+		<type fullname="RuntimeGizmos.TransformGizmo">
+			<method name="DeleteCurrentTarget"/>
+		</type>
+		<type fullname="SaveCameraView">
+			<method name="RestoreView"/>
+			<method name="SaveCurrentView"/>
+		</type>
+		<type fullname="SaveManager">
+			<method name="LoadAll"/>
+			<method name="SaveAll"/>
+		</type>
+		<type fullname="SelectedObjectUI">
+			<method name="SetSelectedObject"/>
+		</type>
+		<type fullname="ToggleEvent">
+			<method name="Toggle"/>
+		</type>
+		<type fullname="VertexEditController">
+			<method name="ActivateVertexEditMode"/>
+			<method name="DeactivateVertexEditMode"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Behaviour">
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+		</type>
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+</linker>

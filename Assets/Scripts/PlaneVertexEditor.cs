@@ -8,18 +8,29 @@ public class PlaneVertexEditor : MonoBehaviour
     private Vector3[] vertices;
     private readonly List<GameObject> handles = new List<GameObject>();
     private Camera mainCam;
-    private bool handlesVisible = true;
+    private bool handlesVisible = false;
     private QuadBilinear quadBilinear;
 
-    private void Start()
+    public void InitOrCheck()
     {
+        if (mesh != null) return;
+
         mainCam = Camera.main;
         mesh = GetComponent<MeshFilter>().mesh;
+
+        if (mesh.vertices.Length == 0) return;
+
         vertices = mesh.vertices;
         quadBilinear = GetComponent<QuadBilinear>();
 
         CreateHandles();
         AssignHandlesToQuad();
+    }
+
+    private void Start()
+    {
+        mainCam = Camera.main;
+        InitOrCheck();
     }
 
     public Vector3[] GetCurrentVertices()
@@ -76,6 +87,7 @@ public class PlaneVertexEditor : MonoBehaviour
 
             handles.Add(h);
             h.SetActive(false);
+            handlesVisible = false;
         }
     }
 
@@ -117,17 +129,18 @@ public class PlaneVertexEditor : MonoBehaviour
     public void OnHandleMoved(int index, Vector3 newWorldPos)
     {
         Vector3 localPos = transform.InverseTransformPoint(newWorldPos);
-        localPos.z = 0f; // Bloquear el eje Z
+        localPos.z = 0f;
 
         vertices[index] = localPos;
         mesh.vertices = vertices;
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
 
+        CenterPivotOnMeshBounds();
         UpdateHandlePositions();
     }
 
-    private void UpdateHandlePositions()
+    public void UpdateHandlePositions()
     {
         if (!handlesVisible) return;
 
@@ -136,12 +149,10 @@ public class PlaneVertexEditor : MonoBehaviour
             var h = handles[i];
             if (!h) continue;
 
-            // Actualizamos las posiciones locales de los handles
             h.transform.localPosition = vertices[i];
         }
     }
 
-    // Limpiar handles cuando se desactive el editor
     public void ClearHandles()
     {
         foreach (var h in handles)
@@ -152,5 +163,20 @@ public class PlaneVertexEditor : MonoBehaviour
             }
         }
         handles.Clear();
+    }
+
+    private void CenterPivotOnMeshBounds()
+    {
+        Vector3 centerOffsetLocal = mesh.bounds.center;
+        Vector3 worldCenter = transform.TransformPoint(centerOffsetLocal);
+
+        transform.position = worldCenter;
+
+        for (int i = 0; i < vertices.Length; i++)
+            vertices[i] -= centerOffsetLocal;
+
+        mesh.vertices = vertices;
+        mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
     }
 }

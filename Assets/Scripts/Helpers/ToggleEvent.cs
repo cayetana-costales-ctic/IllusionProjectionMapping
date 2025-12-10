@@ -10,7 +10,7 @@ public class ToggleEvent : MonoBehaviour
 
     private bool isActive = false;
 
-    void Update()
+    private void LateUpdate()
     {
         if (Input.GetKeyDown(toggleKey))
         {
@@ -22,6 +22,7 @@ public class ToggleEvent : MonoBehaviour
                 onDeactivate.Invoke();
         }
     }
+
     public void Toggle()
     {
         isActive = !isActive;

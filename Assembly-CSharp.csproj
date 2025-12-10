@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\SaveData\TransformSaveData.cs" />
     <Compile Include="Assets\Scripts\Instantiator.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Anchors\scripts\SimpleMatchAnchorScaleAndState.cs" />
+    <Compile Include="Assets\Scripts\Helpers\CursorHelper.cs" />
     <Compile Include="Assets\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
     <Compile Include="Assets\Scripts\Camera\FreeCameraController.cs" />
     <Compile Include="Assets\RuntimeGizmo\Helpers\ExtTransformType.cs" />

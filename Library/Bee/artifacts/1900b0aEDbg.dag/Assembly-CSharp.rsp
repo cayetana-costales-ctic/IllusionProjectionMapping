@@ -473,6 +473,7 @@
 "Assets/Scripts/Camera/FreeCameraController.cs"
 "Assets/Scripts/Camera/SaveCameraView.cs"
 "Assets/Scripts/HandleDrag.cs"
+"Assets/Scripts/Helpers/CursorHelper.cs"
 "Assets/Scripts/Helpers/KeyPressEvent.cs"
 "Assets/Scripts/Helpers/LookAtCamera.cs"
 "Assets/Scripts/Helpers/ToggleEvent.cs"

@@ -4,12 +4,12 @@ using RuntimeGizmos;
 public class VertexEditController : MonoBehaviour
 {
     [Header("Referencias")]
-    public TransformGizmo gizmo; // El Gizmo que gestionará las selecciones
+    public TransformGizmo gizmo;
 
-    public ToggleEvent toggleEvent; // El evento para cambiar de modo
+    public ToggleEvent toggleEvent;
 
-    private bool vertexEditMode = false; // Indica si estamos en modo de edición de vértices
-    private PlaneVertexEditor activeEditor; // Referencia al editor de vértices activo
+    private bool vertexEditMode = false;
+    private PlaneVertexEditor activeEditor;
 
     private void Start()
     {
@@ -43,18 +43,17 @@ public class VertexEditController : MonoBehaviour
     public void ActivateVertexEditMode()
     {
         vertexEditMode = true;
+        Transform targetToEdit = gizmo.currentTarget;
         gizmo.SetVisible(false);
-        Debug.Log("🟢 Modo edición de vértices activado");
 
-        if (gizmo.currentTarget)
-            EnableEditorFor(gizmo.currentTarget);
+        if (targetToEdit)
+            EnableEditorFor(targetToEdit);
     }
 
     public void DeactivateVertexEditMode()
     {
         vertexEditMode = false;
         gizmo.SetVisible(true);
-        Debug.Log("⚪ Modo normal activado");
 
         DisableCurrentEditor();
     }
@@ -64,9 +63,7 @@ public class VertexEditController : MonoBehaviour
         if (!vertexEditMode) return;
 
         if (gizmo.currentTarget)
-        {
             EnableEditorFor(gizmo.currentTarget);
-        }
     }
 
     private void OnTargetDeselected()
@@ -83,11 +80,12 @@ public class VertexEditController : MonoBehaviour
             return;
 
         var editor = target.GetComponent<PlaneVertexEditor>();
-        if (!editor)
-            editor = target.gameObject.AddComponent<PlaneVertexEditor>();
+        editor.InitOrCheck();
 
-        editor.ShowHandles();
         activeEditor = editor;
+        activeEditor.ShowHandles();
+
+        activeEditor.UpdateHandlePositions();
     }
 
     private void DisableCurrentEditor()
