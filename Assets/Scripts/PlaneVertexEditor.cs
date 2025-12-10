@@ -91,7 +91,7 @@ public class PlaneVertexEditor : MonoBehaviour
         }
     }
 
-    private void AssignHandlesToQuad()
+    public void AssignHandlesToQuad()
     {
         if (!quadBilinear || handles.Count < 4) return;
 

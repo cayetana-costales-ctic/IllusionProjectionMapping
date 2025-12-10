@@ -39,6 +39,8 @@ public class SaveManager : MonoBehaviour
 
         foreach (var behaviour in allBehaviours)
         {
+            if (!behaviour.gameObject.activeInHierarchy) continue;
+
             if (behaviour is ISaveable saveable)
             {
                 var mb = (MonoBehaviour)saveable;

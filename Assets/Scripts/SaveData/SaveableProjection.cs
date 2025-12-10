@@ -68,10 +68,15 @@ public class SaveableProjection : MonoBehaviour, ISaveable
             video.url = data.videoPath;
         }
 
-        var editor = GetComponent<PlaneVertexEditor>();
-        if (editor != null && data.editedVertices != null && data.editedVertices.Length > 0)
+        if (data.editedVertices != null && data.editedVertices.Length > 0)
         {
+            var editor = GetComponent<PlaneVertexEditor>();
+            if (editor == null) editor = gameObject.AddComponent<PlaneVertexEditor>();
+            editor.InitOrCheck();
+
             editor.RestoreVertices(data.editedVertices);
+
+            editor.AssignHandlesToQuad();
         }
     }
 }
