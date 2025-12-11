@@ -405,6 +405,7 @@
 "Assets/Scripts/SaveData/ProjectionSaveData.cs"
 "Assets/Scripts/SaveData/SaveableProjection.cs"
 "Assets/Scripts/SaveData/SaveManager.cs"
+"Assets/Scripts/SaveData/SaveUIManager.cs"
 "Assets/Scripts/SaveData/TransformSaveData.cs"
 "Assets/Scripts/TextureImporter/MaterialMediaController.cs"
 "Assets/Scripts/TextureImporter/RuntimeImporter.cs"

@@ -6,6 +6,7 @@ public class SaveableProjection : MonoBehaviour, ISaveable
 {
     public string uniqueID;
     public string LastTexturePath = "";
+    public string LastVideoPath;
 
     private void Awake()
     {

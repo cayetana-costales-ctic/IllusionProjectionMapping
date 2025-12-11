@@ -21,10 +21,6 @@
 			<method name="RestoreView"/>
 			<method name="SaveCurrentView"/>
 		</type>
-		<type fullname="SaveManager">
-			<method name="LoadAll"/>
-			<method name="SaveAll"/>
-		</type>
 		<type fullname="SelectedObjectUI">
 			<method name="SetSelectedObject"/>
 		</type>

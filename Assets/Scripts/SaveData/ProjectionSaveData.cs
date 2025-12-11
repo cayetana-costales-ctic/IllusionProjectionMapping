@@ -33,18 +33,16 @@ public class ProjectionSaveData : TransformSaveData
         var video = obj.GetComponentInChildren<VideoPlayer>();
         var quad = obj.GetComponent<QuadBilinear>();
 
+        var sp = obj.GetComponent<SaveableProjection>();
+
         meshName = filter?.sharedMesh?.name ?? "";
         materialName = renderer?.sharedMaterial?.name ?? "";
 
-        texturePath = obj.GetComponent<SaveableProjection>()?.LastTexturePath ?? "";
+        texturePath = sp?.LastTexturePath ?? "";
 
-        if (renderer && renderer.sharedMaterial && renderer.sharedMaterial.mainTexture)
-        {
-            if (renderer.sharedMaterial.mainTexture is Texture2D tex)
-                texturePath = obj.GetComponent<SaveableProjection>()?.LastTexturePath ?? "";
-        }
-
-        videoPath = video?.url ?? "";
+        videoPath = sp?.LastVideoPath;
+        if (string.IsNullOrEmpty(videoPath))
+            videoPath = video?.url ?? "";
 
         if (renderer && renderer.sharedMaterial)
         {
@@ -69,9 +67,7 @@ public class ProjectionSaveData : TransformSaveData
         }
 
         var editor = obj.GetComponent<PlaneVertexEditor>();
-        if (editor != null)
-        {
+        if (editor)
             editedVertices = editor.GetCurrentVertices();
-        }
     }
 }

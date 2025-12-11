@@ -6,6 +6,7 @@ using UnityEngine.Video;
 public class MaterialMediaController : MonoBehaviour
 {
     private TransformGizmo gizmo;
+    private SaveManager saveManager;
 
     private Renderer currentRenderer;
     private VideoPlayer currentVideo;
@@ -13,6 +14,7 @@ public class MaterialMediaController : MonoBehaviour
     private void Awake()
     {
         gizmo = GetComponent<TransformGizmo>();
+        saveManager = FindFirstObjectByType<SaveManager>();
     }
 
     public void RefreshTarget()
@@ -23,7 +25,6 @@ public class MaterialMediaController : MonoBehaviour
         {
             currentRenderer = null;
             currentVideo = null;
-
             return;
         }
 
@@ -33,15 +34,15 @@ public class MaterialMediaController : MonoBehaviour
 
     public void OnImportTextureButton()
     {
-        string path = RuntimeImporter.ImportImage();
+        string baseFolder = saveManager ? saveManager.SaveFolderPath : Application.persistentDataPath;
 
-        if (string.IsNullOrEmpty(path))
-            return;
+        string path = RuntimeImporter.ImportImage(baseFolder);
+
+        if (string.IsNullOrEmpty(path)) return;
 
         Texture2D tex = RuntimeImporter.LoadImage(path);
 
-        if (!tex)
-            return;
+        if (!tex) return;
 
         RefreshTarget();
         ApplyTexture(tex, path);
@@ -66,7 +67,10 @@ public class MaterialMediaController : MonoBehaviour
 
     public void ImportAndApplyVideo()
     {
-        string path = RuntimeImporter.ImportVideo();
+        string baseFolder = saveManager ? saveManager.SaveFolderPath : Application.persistentDataPath;
+
+        string path = RuntimeImporter.ImportVideo(baseFolder);
+
         if (path == null) return;
 
         RefreshTarget();
@@ -77,6 +81,12 @@ public class MaterialMediaController : MonoBehaviour
             currentVideo.source = VideoSource.Url;
             currentVideo.url = path;
             currentVideo.Play();
+        }
+
+        if (currentRenderer)
+        {
+            var sp = currentRenderer.GetComponent<SaveableProjection>();
+            if (sp != null) sp.LastVideoPath = path;
         }
     }
 }

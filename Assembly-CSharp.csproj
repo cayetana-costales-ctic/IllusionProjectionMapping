@@ -82,6 +82,7 @@
     <Compile Include="Assets\RuntimeGizmo\UndoRedo\DropoutStack.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Turntable and Pullcord\Scripts\PullCord\Exploding Items\ExplodingItemController.cs" />
     <Compile Include="Assets\RuntimeGizmo\Helpers\Geometry.cs" />
+    <Compile Include="Assets\Scripts\SaveData\SaveUIManager.cs" />
     <Compile Include="Assets\Samples\Ultraleap Tracking\7.2.0\XR Examples\Example Assets\Pinch to Paint\Scripts\RectToroid.cs" />
     <Compile Include="Assets\Scripts\TextureImporter\RuntimeImporter.cs" />
     <Compile Include="Assets\Scripts\VertexEditController.cs" />

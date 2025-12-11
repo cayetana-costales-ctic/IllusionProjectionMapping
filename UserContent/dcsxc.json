@@ -1,0 +1,9 @@
+{
+    "entries": [
+        {
+            "id": "e941958b-e3a8-41f2-9210-43e339ead9f2",
+            "type": "ProjectionSaveData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "json": "{\"position\":{\"x\":-4.954155921936035,\"y\":1.5751678943634034,\"z\":0.0},\"rotation\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"scale\":{\"x\":5.786200046539307,\"y\":5.786200046539307,\"z\":5.786200046539307},\"objectName\":\"e941958b-e3a8-41f2-9210-43e339ead9f2\",\"meshName\":\"Quad Instance\",\"materialName\":\"CheckerMat (Instance)\",\"texturePath\":\"\",\"videoPath\":\"\",\"textureTiling\":{\"x\":2.036026954650879,\"y\":1.0},\"textureOffset\":{\"x\":0.0,\"y\":0.0},\"quadTextureTiling\":{\"x\":2.036026954650879,\"y\":1.0},\"quadTextureOffset\":{\"x\":0.0,\"y\":0.0},\"editedVertices\":[{\"x\":-0.5,\"y\":-0.5,\"z\":-3.0616168005906749e-17},{\"x\":0.5,\"y\":-0.5,\"z\":-3.0616168005906749e-17},{\"x\":-0.5,\"y\":0.5,\"z\":3.0616168005906749e-17},{\"x\":0.5,\"y\":0.5,\"z\":3.0616168005906749e-17}]}"
+        }
+    ]
+}
